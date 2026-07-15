@@ -1,0 +1,71 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+// Variables
+$font-family-base: 'Inter', sans-serif;
+$primary: #0d6efd;
+$secondary: #6c757d;
+$dark: #212529;
+
+// Bootstrap & Icons
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+// Custom Styles
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.product-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    }
+
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.admin-sidebar {
+    min-height: calc(100vh - 56px);
+    background-color: #343a40;
+    color: white;
+
+    .nav-link {
+        color: rgba(255,255,255,0.8);
+        padding: 0.8rem 1rem;
+        
+        &:hover, &.active {
+            color: white;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 5px;
+        }
+
+        i {
+            margin-right: 10px;
+        }
+    }
+}
+
+.toast-container {
+    z-index: 1060;
+}

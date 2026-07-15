@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "orders": {
+      ".read": true,
+      ".write": false
+    },
+    "notifications": {
+      ".read": "auth != null",
+      ".write": false
+    }
+  }
+}
