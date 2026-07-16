@@ -19,3 +19,7 @@ yarn-error.log
 storage/app/firebase-credentials.json
 app/firebase-tools-instant-win.exe
 firebase-debug.log
+
+.env.*
+*.log
+app/firebase-debug.log
